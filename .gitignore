@@ -2,3 +2,7 @@
 /build/
 /dist/
 /*.iml
+/企业信息爬虫程序
+/file
+/*.spec
+/bin/ghostdriver.log

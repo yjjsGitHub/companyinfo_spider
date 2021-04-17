@@ -6,6 +6,15 @@
 import qiqicha
 import aiqicha
 from config.config import *
+
 if __name__ == '__main__':
-    qiqicha.run_qiqicha()
-    aiqicha.run_aiqicha()
+    curPath = os.path.abspath(os.path.dirname(__file__))
+    if env == 'dev':
+        curPath = curPath.split("\\bin")
+        curPath = str(curPath[0]) + '\\file'
+        print(curPath)
+    qiqicha.run_qiqicha(curPath)
+    # qiqicha.run_qiqicha()
+    # aiqicha.run_aiqicha()
+    # print(phantomjs_path)
+    # input("please input any key to exit!")
